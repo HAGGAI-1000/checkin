@@ -4,9 +4,9 @@ from twilio.twiml.messaging_response import MessagingResponse
 from twilio.rest import Client
 from openai import OpenAI
 import requests
-from dotenv import load_dotenv
 
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 
 gender = "female"
 #receiver = "whatsapp:+972507715395"
