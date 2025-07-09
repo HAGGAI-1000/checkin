@@ -34,15 +34,15 @@ def whatsapp_reply():
         return str(resp)
     gender = user['gender']
     name = user['name']
-    match incoming_msg:
+    match incoming_msg.lower():
         case "demo":
-            twilioClient.messages.create(from_= sender, to = incoming_sender, content_sid = 'HXee8c500e794d49f8a96abf68df67da8a')
+            twilioClient.messages.create(from_= sender, to = incoming_sender, content_sid = 'HXbcdb929723b9e8f0c0e5f1d3ebdd7460')
             resp = None
         case "אוקיי קדימה!":
             if gender == 'male':
-                twilioClient.messages.create(from_= sender, to = incoming_sender, content_sid = 'HX36ceb85a37eb8429553621d86bd26d72')
+                twilioClient.messages.create(from_= sender, to = incoming_sender, content_sid = 'HX61bf0f509d4168b68dcd38fc2c10fb93')
             else:
-                twilioClient.messages.create(from_= sender, to = incoming_sender, content_sid = 'HX36ceb85a37eb8429553621d86bd26d72')
+                twilioClient.messages.create(from_= sender, to = incoming_sender, content_sid = 'HXb563ed8bc142dbceec74fc23b6bf90e9')
             resp = None
         case "לא עכשיו":
             resp = MessagingResponse()
