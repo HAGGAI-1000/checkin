@@ -14,3 +14,15 @@ prompt2 = (f"I want you to act as a mental health adviser. Information was provi
            f"empathetic and supportive tone to help them feel understood and better. Gently offer a new"
            f"perspective and suggest one simple action they can take to improve their emotional state."
            f"If the user's response is unrelated to their emotional state, suggest to focus on their feelings.")
+
+notUserResp = "Sorry, I don't recognize this number. Please contact Noga Tal."
+
+def notNowResp(gender):
+    if gender == 'male':
+        return "אוקיי, אני מחכה לשמוע ממך כשאתה מוכן!"
+    else:
+        return "אוקיי, אני מחכה לשמוע ממך כשאת מוכנה!"
+
+def promptVoice(voice_mood):
+    return (f"In addtion, speeche emotion recognition was performed on the user's voice message, "
+            f"and the detected emotion is: {voice_mood}.")
